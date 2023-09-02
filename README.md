@@ -1,7 +1,7 @@
 
 # Bahasa Pemrogramman Jawa (Jawa Programming Language)
 
-Bahasa pemrogramman berbasis python yang dibuat dengan latar belakang gabut,iseng,biar logika coding nggak ilang dikala bingung mau bikin project apaan.
+Bahasa pemrogramman berbasis python yang dibuat dengan latar belakang gabut,iseng,biar logika coding nggak ilang dikala bingung mau bikin project apaan. Belum diuji coba di os windows, saya baru mengujinya di linux mint.
 
 
 ## Authors
