@@ -14,7 +14,7 @@ Bahasa pemrogramman berbasis python yang dibuat dengan latar belakang gabut,isen
 Petunjuk Instalasi
 
 ```bash
-  git clone github.link
+  git clone https://github.com/eksa-arifa/jawa-lang.git
   cd jawa-lang
 ```
 Jalankan program pertamamu
