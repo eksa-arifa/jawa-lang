@@ -1,4 +1,3 @@
-
 # Bahasa Pemrogramman Jawa (Jawa Programming Language)
 
 Bahasa pemrogramman berbasis python yang dibuat dengan latar belakang gabut,iseng,biar logika coding nggak ilang dikala bingung mau bikin project apaan. Belum diuji coba di os windows, saya baru mengujinya di linux mint.
@@ -40,90 +39,71 @@ jawa --version
 
 ## Usage/Examples
 
-Cobalah untuk meng outputkan sesuatu dengan perintah "tokke"
+Cobalah untuk mengoutputkan sesuatu dengan perintah "tokke". Sekarang sudah bisa menggunakan spasi!
 
 ```
-tokke "ini-contoh-string"
+tokke "halo dunia sego pecel"
 ```
-lihatlah, string tidak boleh memakai spasi, ini adalah salah satu aturan jawa programming language.
 
-selanjutnya, bagaimana dengan variable?
+Selanjutnya, bagaimana dengan variabel?
 
 ```
-jane b iku "ini-variable-b"
+jane b iku "iki variabel b"
 ```
-lihat kode di atas, jane adalah keyword untuk mendeklarasikan variable di jawa programming language, dengan b sebagai key dan string setelah iku sebagai value.
+Lihat kode di atas, `jane` adalah keyword untuk mendeklarasikan variabel, dengan `b` sebagai key dan string setelah `iku` sebagai value.
 
-if else steatment
+### If Else Statement
 
 ```
 jane b iku 10
 
 nek b iku 10
-    tokke "b-iku-10"
+    tokke "b iku sepuluh"
 nekora
-    tokke "b-udu-10"
+    tokke "b dudu sepuluh"
 wes
-
 ```
 
-lihat syntax diatas, saya mendeklarasikan variable b dengan nilai 10.
-kemudian say cek apakah variable b == 10? Jika ya keluarkan "b-iku-10",
-jika tidak keluarkan output "b-udu-10". Dengan nek sebagai if, iku sebagai ==, nekora sebagai else, dan wes sebagai endif.
+Dengan `nek` sebagai **if**, `iku` sebagai **==**, `nekora` sebagai **else**, dan `wes` sebagai **endif**.
 
-bagaimana dengan elif?
+### Elif Statement
 
 ```
 jane b iku 10
 
 nek b iku 10
-    tokke "b-iku-10"
+    tokke "b iku 10"
 po b iku 15
-    tokke "b-iku-15"
+    tokke "b iku 15"
 nekora
-    tokke "mbuh"
+    tokke "mbuh ora weruh"
 wes
 ```
-Lihat kode diatas, kalian bisa menuliskan elif steatment dengan keyword "po".
+Kalian bisa menuliskan elif statement dengan keyword `po`.
 
+### Function
 
-Bagaimana dengan function? Lihat kode dibawah
 ```
 lelakon apik(params)
     tokke params
 wes
 
-lakoni apik("joss-tenan")
+lakoni apik("joss tenan")
 ```
-Lihat kode diatas, kalian bisa mendeklarasikan function dengan keyword lelakon diikuti nama function dan parameter.
+Deklarasikan fungsi dengan `lelakon` dan panggil dengan `lakoni`.
 
-kalian juga dapat memanggil function tersebut dengan menggunakan keyword lakoni diikuti nama function dan beri parameter jika ada.
-
-Bagaimana dengan looping di jawa programming language?
-
+### Looping
 
 ```
 jane i iku 0
 
 baleni nek i kurangSekoPodoKaro 10
     tokke i
-
     ganti i dadi i+1
 wes
-
 ```
+Gunakan `baleni nek` untuk melakukan perulangan.
 
-Lihat, anda dapat menggunakan keyword baleni diikuti keyword nek -> variable increment -> operator -> nilai kondisi ketika, untuk melakukan looping.
-
-Tambahan, input
-
-```
-pitakonan key "Parameter"
-
-tokke key
-```
-
-Saya juga menambahkan keyword pitakonan diikuti key -> Params, untuk menginputkan sesuatu agar bahasa ini bisa lebih berguna. 
 ## Operator List
 
 
@@ -137,7 +117,22 @@ Saya juga menambahkan keyword pitakonan diikuti key -> Params, untuk menginputka
 | `luwihSekoPodoKaro` | `>=` | Perbandingan lebih dari sama dengan |
 | `kurangSekoPodoKaro` | `<=` | Perbandingan kurang dari sama dengan |
 
+### Tipe Data
 
+Karena `jawa-lang` berjalan di atas Python, kamu bisa menggunakan semua tipe data Python secara langsung:
+
+- **String**: `jane jeneng iku "Eksa Arifa"`
+- **Angka**: `jane umur iku 20`
+- **List**: `jane buah iku ["Mangga", "Apel", "Jeruk"]`
+- **Dictionary**: `jane data iku {"id": 1, "status": "aktif"}`
+- **Boolean**: `jane bener iku True`
+
+Contoh penggunaan List:
+```
+jane daftar iku [1, 2, 3]
+tokke daftar[0]
+wes
+```
 
 
 ## Support
@@ -148,4 +143,5 @@ For support, belikan saya kopi
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
 

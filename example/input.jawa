@@ -1,6 +1,7 @@
 
 
-pitakonan c "Sopo-jenengmu:"
+pitakonan c "Sapa jenengmu: "
 
 
-tokke "Sugeng-rawuh-"+c
+tokke "Sugeng rawuh "
+tokke c
