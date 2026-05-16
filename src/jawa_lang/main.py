@@ -11,7 +11,7 @@ def jawaInterpreter():
     locateFile = sys.argv[1]
 
     if locateFile in ["--version", "-V"]:
-        print("jawa-lang versi 0.1.1")
+        print("jawa-lang versi 0.1.2")
         return
 
     if not locateFile.endswith(".jawa"):
