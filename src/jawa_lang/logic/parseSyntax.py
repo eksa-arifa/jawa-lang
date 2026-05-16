@@ -1,3 +1,4 @@
+import re
 import shlex
 
 tab = ""
@@ -21,6 +22,10 @@ def parseSyntax(e):
     if e != "":
         e = e.strip()
         
+
+        if "itung " in e:
+            e = re.sub(r'itung\s+([^, \n\t]+)', r'len(\1)', e)
+
         temp_split = e.split(" ", 1)
         keyword = temp_split[0]
         
