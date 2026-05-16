@@ -11,17 +11,33 @@ Bahasa pemrogramman berbasis python yang dibuat dengan latar belakang gabut,isen
 
 ## Installation
 
-Petunjuk Instalasi
+Paling gampang instal langsung lewat pip:
 
 ```bash
-  git clone https://github.com/eksa-arifa/jawa-lang.git
-  cd jawa-lang
+pip install hidup-jawa
 ```
-Jalankan program pertamamu
+
+Atau kalau mau instal manual dari source:
+
 ```bash
-  python3 jawa example/print.jawa
+git clone https://github.com/eksa-arifa/jawa-lang.git
+cd jawa-lang
+pip install -e .
 ```
-    
+
+## Cara Menjalankan
+
+Setelah instalasi selesai, kamu bisa menjalankan file `.jawa` langsung menggunakan perintah `jawa`:
+
+```bash
+jawa example/print.jawa
+```
+
+Untuk mengecek versi:
+```bash
+jawa --version
+```
+
 ## Usage/Examples
 
 Cobalah untuk meng outputkan sesuatu dengan perintah "tokke"
