@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jawa-lang"
+version = "0.1.0"
+description = "Bahasa pemrograman berbasis bahasa Jawa"
+readme = "README.md"
+authors = [{ name = "Eksa Arifa", email = "arifaeksa@gmail.com" }]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+jawa = "jawa_lang.main:jawaInterpreter"
+
+[tool.setuptools.packages.find]
+where = ["src"]

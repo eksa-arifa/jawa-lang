@@ -1,0 +1,2 @@
+[console_scripts]
+jawa = jawa_lang.main:jawaInterpreter
