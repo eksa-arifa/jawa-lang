@@ -10,6 +10,10 @@ def jawaInterpreter():
 
     locateFile = sys.argv[1]
 
+    if locateFile in ["--version", "-V"]:
+        print("jawa-lang versi 0.1.0")
+        return
+
     if not locateFile.endswith(".jawa"):
         print(locateFile + " " + "Bukan jawa language")
         return
