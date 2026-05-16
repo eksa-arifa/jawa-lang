@@ -8,5 +8,4 @@ nek angka iku 100
 wes
 
 pitakonan jeneng "Sapa jenengmu? "
-tokke "Halo "
-tokke jeneng
+tokke f"Halo {jeneng}"

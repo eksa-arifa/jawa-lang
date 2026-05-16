@@ -24,18 +24,6 @@ def parseSyntax(e):
         temp_split = e.split(" ", 1)
         keyword = temp_split[0]
         
-        def parse_complex_val(val_string):
-            val_string = val_string.strip()
-            if (val_string.startswith('"') and val_string.endswith('"')) or \
-               (val_string.startswith("'") and val_string.endswith("'")):
-                return val_string
-            if (val_string.startswith("[") and val_string.endswith("]")) or \
-               (val_string.startswith("{") and val_string.endswith("}")):
-                return val_string
-            if val_string.replace('.','',1).isdigit():
-                return val_string
-            return val_string
-
         try:
             pecah = shlex.split(e)
         except ValueError:
