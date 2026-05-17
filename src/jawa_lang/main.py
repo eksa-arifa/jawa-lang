@@ -3,6 +3,7 @@ import sys
 import os
 from jawa_lang.logic.parseSyntax import parseSyntax
 
+
 def jawaInterpreter():
     if len(sys.argv) < 2:
         print("Penggunaan: jawa <file.jawa>")
@@ -11,7 +12,7 @@ def jawaInterpreter():
     locateFile = sys.argv[1]
 
     if locateFile in ["--version", "-V"]:
-        print("jawa-lang versi 0.1.5")
+        print("jawa-lang versi 0.1.6")
         return
 
     if not locateFile.endswith(".jawa"):
@@ -32,8 +33,12 @@ def jawaInterpreter():
     ctoe = ""
     for r in res:
         ctoe += r + '\n'
-    
-    os.system("python3 -c '"+ctoe+"'")
+
+    try:
+        exec(ctoe)
+    except Exception as e:
+        print(f"Error pas njerjemahke: {e}")
+
 
 if __name__ == "__main__":
     jawaInterpreter()
