@@ -12,7 +12,7 @@ def jawaInterpreter():
     locateFile = sys.argv[1]
 
     if locateFile in ["--version", "-V"]:
-        print("jawa-lang versi 0.1.6")
+        print("jawa-lang versi 0.1.7")
         return
 
     if not locateFile.endswith(".jawa"):
@@ -37,7 +37,7 @@ def jawaInterpreter():
     try:
         exec(ctoe)
     except Exception as e:
-        print(f"Error pas njerjemahke: {e}")
+        print(f"Janc*k, sek teliti cok... error iki, cek sek: {e}")
 
 
 if __name__ == "__main__":
